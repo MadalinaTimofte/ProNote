@@ -4,9 +4,10 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
+    <uses-sdk android:minSdkVersion="8"  android:targetSdkVersion="18" />
+    
+    <!-- Allow to connect with internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
     
     <!--Accesing camera hardware-->
     
@@ -23,15 +24,40 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+      <!--  
         <activity
-            android:name="com.example.pronote.MainActivity"
+           android:name="com.example.pronote.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity> -->
+        
+       <activity
+            android:label="@string/app_name"
+            android:name=".MainActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+ 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-    </application>
-
+ 
+       <!--  Login Activity -->
+        <activity
+            android:label="Login Account"
+            android:name=".LoginActivity"></activity>
+ 
+        <!--  Register Activity -->
+        <activity
+            android:label="Register New Account"
+            android:name=".RegisterActivity"></activity>
+    
+        
+  
+    
+     
+</application>
 </manifest>
