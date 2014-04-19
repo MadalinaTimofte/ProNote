@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:background="#FFF9C8" >
+  
+    <LinearLayout
+        android:id="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="2dp"
+        android:background="#FFF9C8"
+        android:divider="#cc6633">
+        
+           <ImageButton
+	        android:id="@+id/note"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/ic_note" 
+	        android:contentDescription="@string/note"
+	        android:padding="0dp"
+	        android:layout_margin="10dp"
+		        />
+          
+	      <ImageButton
+	        android:id="@+id/camera"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/ic_camera"
+	        android:contentDescription="@string/camera"
+	        android:padding="0dp" 
+	        android:layout_margin="10dp"/>
+
+		  <ImageButton
+	        android:id="@+id/record"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@string/record"
+	        android:src="@drawable/ic_record" 
+	        android:padding="0dp"
+	        android:layout_margin="10dp"/>
+        
+        </LinearLayout>
+
+</LinearLayout>

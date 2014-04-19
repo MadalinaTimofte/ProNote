@@ -1,9 +1,12 @@
-package com.example.pronote;
+package login;
 
  
+import library.DatabaseHandler;
+import library.UserFunctions;
+
 import org.json.JSONException;
 import org.json.JSONObject;
- 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,9 +14,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
- 
-import library.DatabaseHandler;
-import library.UserFunctions;
+
+import com.example.pronote.R;
  
 public class LoginActivity extends Activity {
     Button btnLogin;
